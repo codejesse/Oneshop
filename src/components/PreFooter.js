@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import "../App.scss"
+import Fade from 'react-reveal/Fade';
 
 const PreWrapper = styled.div`
    display: flex;
@@ -55,22 +56,20 @@ const CardPara = styled.p`
    }
 `;
 
-// const CardImages = styled.div`
-//   display: flex;
-//   flex-direction: row;  
-// `;
+const CardImages = styled.div`
+   display: flex;
+   justify-content: center;
+`;
 
 function PreFooter() {
     return(
         <PreWrapper>
             <Card>
-                <CardHeader>Start selling</CardHeader>
-                <CardPara>Lorem ipsum dolor sit amet, consectetur </CardPara>
-                {/* <CardImages>
-                    <img src='image9.png' alt='image' />
-                    <img src='image10.png' alt='image' />
-                    <img src='image11.png' alt='image' />
-                </CardImages> */}
+                <Fade bottom><CardHeader>Start selling</CardHeader></Fade>
+                <Fade bottom><CardPara>Lorem ipsum dolor sit amet, consectetur </CardPara></Fade>
+                <CardImages>
+                    <img src='bg.png' alt='background' />
+                </CardImages>
             </Card>
         </PreWrapper>
     )

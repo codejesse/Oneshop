@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import "../App.scss"
+import Fade from 'react-reveal/Fade';
 
 const AboutWrapper = styled.div`
    display: flex;
@@ -71,15 +72,15 @@ function About() {
     return (
         <>
             <AboutWrapper>
-                <ImageBackground>
-                    <img className='about-image' src='image 6.png' alt='about' />
-                </ImageBackground>
+                <Fade left><ImageBackground>
+                    <Fade bottom><img className='about-image' src='image 6.png' alt='about' /></Fade>
+                </ImageBackground></Fade>
                 <AboutDetails>
-                    <AboutHeader>Create your own store</AboutHeader>
-                    <AboutPara>Lorem ipsum dolor sit amet, consectetur
+                    <Fade bottom><AboutHeader>Create your own store</AboutHeader></Fade>
+                    <Fade bottom><AboutPara>Lorem ipsum dolor sit amet, consectetur
                         adipiscing elit. At non nec sit viverra duis
                         tortor non. Est fringilla a volutpat tortor
-                        suspendisse malesuada </AboutPara>
+                        suspendisse malesuada </AboutPara></Fade>
                     <AboutButton>Get started</AboutButton>
                 </AboutDetails>
             </AboutWrapper>

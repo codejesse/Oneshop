@@ -64,11 +64,13 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  &.loader-inner {
-    @media (max-width: 600px) {
-      flex-direction: column;
-    }
-  }
+  // &.loader-inner {
+  //   @media (max-width: 600px) {
+  //     flex-direction: column;
+  //     margin: auto;
+  //     width: 90%;
+  //   }
+  // }
 }
 
 .image-4 {

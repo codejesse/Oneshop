@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import "../App.scss"
+import Fade from 'react-reveal/Fade';
 
 const DescWrapper = styled.div`
    display: flex;
@@ -59,14 +60,14 @@ function Desc() {
     return (
         <DescWrapper>
             <DescDetails>
-                <DescHeader>Start selling in seconds</DescHeader>
-                <DescPara>Lorem ipsum dolor sit amet, consectetur
+                <Fade bottom><DescHeader>Start selling in seconds</DescHeader></Fade>
+                <Fade bottom><DescPara>Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit. At non nec sit viverra duis
                     tortor non. Est fringilla a volutpat tortor
-                    suspendisse malesuada </DescPara>
+                    suspendisse malesuada </DescPara></Fade>
                     <DescButton>Learn More</DescButton>
             </DescDetails>
-                <DescImage><img className="desc-image" src='image8.png' alt='desc' /></DescImage>
+                <DescImage><Fade right><img className="desc-image" src='image8.png' alt='desc' /></Fade></DescImage>
         </DescWrapper>
     )
 }

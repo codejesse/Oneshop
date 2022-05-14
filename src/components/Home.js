@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import "../App.scss"
+import Fade from 'react-reveal/Fade';
 
 const HomeWrapper = styled.div`
    display: flex;
@@ -89,10 +90,10 @@ function Home() {
     return (
         <HomeWrapper>
             <HeaderDetails>
-                <HeaderText>Everything in one place</HeaderText>
-                <HeaderPara>Create an online shop in 5 minutes or less
+                <Fade bottom><HeaderText>Everything in one place</HeaderText></Fade>
+                <Fade bottom><HeaderPara>Create an online shop in 5 minutes or less
                 curated to making selling online very easy for
-                everyone without writing code.</HeaderPara>
+                everyone without writing code.</HeaderPara></Fade>
                 <ButtonWrapper>
                     <HeaderButton>Get Started</HeaderButton>
                 </ButtonWrapper>
