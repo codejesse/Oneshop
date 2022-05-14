@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import React, { useState, useEffect } from "react";
 import Loader from './components/Loader';
 import Home from './components/Home';

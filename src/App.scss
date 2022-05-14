@@ -60,6 +60,24 @@ body {
   width: 100%;
 }
 
+.loader-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  &.loader-inner {
+    @media (max-width: 600px) {
+      flex-direction: column;
+    }
+  }
+}
+
+.image-4 {
+  margin-top: 3rem;
+}
+
+.image-3 {
+  margin-top: 2rem;
+}
 
 @media (max-width: 768px) {
   .desc-image {

@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import "../App.css"
+import "../App.scss"
 
 const AboutWrapper = styled.div`
    display: flex;
