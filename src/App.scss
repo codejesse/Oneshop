@@ -81,10 +81,19 @@ body {
   margin-top: 2rem;
 }
 
+.device-image {
+  width: 90%;
+  border: 1px solid blue;
+}
+
 @media (max-width: 768px) {
   .desc-image {
     width: 90%;
     height: auto;
+  }
+
+  .device-image {
+    width: 90%;
   }
 
   .about-image {

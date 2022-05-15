@@ -6,6 +6,7 @@ const PreWrapper = styled.div`
    display: flex;
    justify-content: center;
    margin: 7rem;
+   margin-bottom: 12rem;
    @media (max-width: 600px) {
        margin: 1rem;
        margin-top: 5rem;
@@ -61,14 +62,22 @@ const CardImages = styled.div`
    justify-content: center;
 `;
 
+const ImageWrapper = styled.div`
+   width: 55%;
+   height: auto;
+   margin: auto;
+`;
+
 function PreFooter() {
-    return(
+    return (
         <PreWrapper>
             <Card>
                 <Fade bottom><CardHeader>Start selling</CardHeader></Fade>
                 <Fade bottom><CardPara>Lorem ipsum dolor sit amet, consectetur </CardPara></Fade>
                 <CardImages>
-                    <img src='bg.png' alt='background' />
+                    <ImageWrapper>
+                        <Fade bottom><img className='device-img' src='bg.png' alt='background' /></Fade>
+                    </ImageWrapper>
                 </CardImages>
             </Card>
         </PreWrapper>
