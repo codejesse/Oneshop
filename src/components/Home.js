@@ -95,7 +95,7 @@ function Home() {
                 curated to making selling online very easy for
                 everyone without writing code.</HeaderPara></Fade>
                 <ButtonWrapper>
-                    <HeaderButton>Get Started</HeaderButton>
+                    <HeaderButton className='blob red'>Get Started</HeaderButton>
                 </ButtonWrapper>
             </HeaderDetails>
         </HomeWrapper>
